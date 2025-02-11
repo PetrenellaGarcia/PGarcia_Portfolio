@@ -1,0 +1,12 @@
+.carousel img {
+    height: 500px; /* Adjust height */
+    object-fit: cover;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    filter: invert(100%); /* Make arrows visible */
+}
+
+.carousel-fade .carousel-item {
+    transition: opacity 1s ease-in-out;
+}
