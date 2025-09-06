@@ -1,12 +1,53 @@
 .carousel img {
-    height: 500px; /* Adjust height */
+    height: 500px;
     object-fit: cover;
 }
 
 .carousel-control-prev, .carousel-control-next {
-    filter: invert(100%); /* Make arrows visible */
+    filter: invert(100%); 
 }
 
 .carousel-fade .carousel-item {
     transition: opacity 1s ease-in-out;
 }
+
+
+/* Experience Section */
+ .resume-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    text-align: justify;
+    gap: 25px;
+  }
+
+  @media (max-width: 768px) {
+    .resume-section {
+      grid-template-columns: 1fr; 
+    }
+  }
+
+  .resume-wrap {
+    border-radius: 5px;
+    padding: 30px;
+    height: 480px; 
+    overflow-y: auto;
+    scrollbar-width: none;
+  }
+
+  .resume-wrap::-webkit-scrollbar {
+    width: 6px;
+    background: transparent;
+  }
+
+  .resume-wrap::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 6px;
+  }
+
+  .resume-wrap:hover::-webkit-scrollbar-thumb {
+    background: #aaa;
+  }
+
+  .resume-wrap:hover::-webkit-scrollbar {
+    background: #eee;
+  }
